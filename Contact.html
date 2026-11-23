@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <h2>🐾 PawsHome</h2>
+            <p>Animal Shelter</p>
+        </div>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="adopt.html">Adopt</a>
+            <a href="Contact.html" class="active">Contact</a>
+        </nav>
+    </header>
+    <main class="contact-page">
+        <div class="paw paw-one">🐾</div>
+        <div class="paw paw-two">🐾</div>
+        <div class="contact-heading">
+            <h1>Contact Us</h1>
+            <h2>We'd love to hear from you!</h2>
+        </div>
+        <section class="contact-section">
+            <div class="contact-info">
+                <div class="info-box">
+                    <h3>📍</h3>
+                    <p> 123 Pet Care Lane,<br>Bangalore, KA 560001</p>
+                </div>
+                <div class="info-box">
+                    <h3>📞</h3>
+                    <p>+91 98765 43210</p>
+                </div>
+                <div class="info-box">
+                    <h3>✉</h3>
+                    <p>support@pawshome.in</p>
+                </div>
+                <div class="social-section">
+                    <h2>Follow Us</h2>
+                    <div class="social-links">
+                        <a href="#">f</a>
+                        <a href="#">◎</a>
+                        <a href="#">▶</a>
+                        <a href="#">𝕏</a>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form action="/action.php">
+                    <input type="text" placeholder="Your Name" id="contactName">
+                    <input type="email" placeholder="Your Email" id="contactEmail">
+                    <textarea placeholder="Your Message" id="message"></textarea>
+                    <button type="button" onclick="checkContact()" ondblclick="sendMessage()">Send Message</button>
+                    <p id="message"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

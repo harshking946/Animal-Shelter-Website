@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adoption Application</title>
+    <link rel="stylesheet" href="adopt_apllication.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <h2>🐾 PawsHome</h2>
+            <p>Animal Shelter</p>
+        </div>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="adopt.html">Adopt</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+    </header>
+    <main class="application">
+        <div class="heading">
+            <h1>📋 Adoption Application</h1>
+            <p>Tell us about yourself and why you want to adopt.</p>
+        </div>
+        <section class="form-section">
+            <form action="/action.php">
+                <div class="left-form">
+                    <label>Full Name *</label>
+                    <input type="text" placeholder="Enter your name" id="name">
+                    <label>Email Address *</label>
+                    <input type="email" placeholder="you@example.com" id="email">
+                    <label>Phone Number *</label>
+                    <input type="tel" placeholder="+91 98765 43210" id="phone">
+                </div>
+                <div class="right-form">
+                    <label>Why do you want to adopt? *</label>
+                    <textarea placeholder="Tell us about your reason..."></textarea>
+                    <p class="question">Do you have other pets?</p>
+                    <div class="radio-buttons">
+                        <input type="radio" name="pets" id="yes" value="yes">
+                        <label for="yes">Yes</label>
+                        <input type="radio" name="pets" id="no" value="no">
+                        <label for="no">No</label>
+                    </div>
+                    <div class="terms">
+                        <input type="checkbox" >
+                        <p>I agree to the adoption terms and conditions.</p>
+                    </div>
+                    <button type="button" onclick="checkAdoption()" onclick="submitApplication()">Submit Application</button>
+                    <p id="application"></p>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
